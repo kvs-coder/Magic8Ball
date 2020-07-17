@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="T1G-zu-2Yv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask a question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzS-al-HWg">
+                                <rect key="frame" x="52" y="57" width="216" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="1M8-bI-JKG"/>
+                                    <constraint firstAttribute="height" constant="69" id="uOA-tn-Wjk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-Y6-mSK">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3vc-aO-mPz"/>
+                                    <constraint firstAttribute="height" constant="300" id="f2Y-b2-3ZJ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="yOX-le-Wsk">
+                                <rect key="frame" x="53.5" y="465.5" width="213" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBY-av-nHG">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="38"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMZ-hd-5Ia">
+                                        <rect key="frame" x="51" y="0.0" width="63" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                        <state key="normal" title="shake">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shaked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXN-2Q-PZh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the ball!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fj9-SG-Ybi">
+                                        <rect key="frame" x="125" y="0.0" width="88" height="38"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56628109558255635" green="0.78846841247435639" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T1G-zu-2Yv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5Yl-ZY-khm"/>
+                            <constraint firstItem="e6h-Y6-mSK" firstAttribute="top" secondItem="xzS-al-HWg" secondAttribute="bottom" constant="8" id="8Vz-zN-PlG"/>
+                            <constraint firstItem="T1G-zu-2Yv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DfI-hD-LLq"/>
+                            <constraint firstItem="yOX-le-Wsk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNM-4t-YGv"/>
+                            <constraint firstItem="e6h-Y6-mSK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gjv-Nf-OCH"/>
+                            <constraint firstItem="T1G-zu-2Yv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SEo-sO-4tg"/>
+                            <constraint firstItem="yOX-le-Wsk" firstAttribute="top" secondItem="e6h-Y6-mSK" secondAttribute="bottom" constant="31.5" id="Y4N-1T-h0c"/>
+                            <constraint firstItem="T1G-zu-2Yv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qLF-RA-xwF"/>
+                            <constraint firstItem="xzS-al-HWg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rLH-Xf-Vad"/>
+                            <constraint firstItem="e6h-Y6-mSK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sXx-S0-NkJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ballImage" destination="e6h-Y6-mSK" id="eWw-Y2-Jcb"/>
+                        <outlet property="shakeBtn" destination="KMZ-hd-5Ia" id="Gu3-US-y76"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1000" height="1000"/>
+        <image name="ball1" width="393.5" height="390.5"/>
+    </resources>
+</document>

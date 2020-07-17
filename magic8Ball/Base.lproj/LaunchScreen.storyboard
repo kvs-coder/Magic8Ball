@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="um1-q4-zKh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The magic ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wf2-e7-LcP">
+                                <rect key="frame" x="55" y="301" width="266" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="MZn-xb-afK"/>
+                                    <constraint firstAttribute="width" constant="266" id="d8j-2z-EPa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="knows everything!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VX-Y2-V7R">
+                                <rect key="frame" x="55" y="373" width="266" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="Cd1-Vg-dcA"/>
+                                    <constraint firstAttribute="height" constant="65" id="gWS-Qx-p1P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have a doubt?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt2-h7-eHw">
+                                <rect key="frame" x="55.5" y="144" width="264" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="JJ0-6g-nLY"/>
+                                    <constraint firstAttribute="height" constant="90" id="ggH-9t-33X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="um1-q4-zKh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5om-Qf-t2A"/>
+                            <constraint firstItem="wf2-e7-LcP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7S7-eo-3xZ"/>
+                            <constraint firstItem="um1-q4-zKh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="afE-ge-IVK"/>
+                            <constraint firstItem="wf2-e7-LcP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bs2-Ff-ez4"/>
+                            <constraint firstItem="um1-q4-zKh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dN5-jb-mg8"/>
+                            <constraint firstItem="7VX-Y2-V7R" firstAttribute="top" secondItem="wf2-e7-LcP" secondAttribute="bottom" constant="7" id="eJN-oX-ng8"/>
+                            <constraint firstItem="dt2-h7-eHw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g7x-yl-act"/>
+                            <constraint firstItem="um1-q4-zKh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lyJ-NF-dCr"/>
+                            <constraint firstItem="wf2-e7-LcP" firstAttribute="top" secondItem="dt2-h7-eHw" secondAttribute="bottom" constant="67" id="ruQ-4j-uMV"/>
+                            <constraint firstItem="7VX-Y2-V7R" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wOS-SO-wCs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1000" height="1000"/>
+    </resources>
+</document>
